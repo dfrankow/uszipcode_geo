@@ -6,3 +6,6 @@ json/zip5.topojson: json/zip5.geojson
 
 json/zip5.geojson:
 	./print_zip_geojson.py > json/zip5.geojson
+
+clean_topo:
+	rm -f json/zip[35].topojson
