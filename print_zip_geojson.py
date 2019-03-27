@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Usage: ./print_zip_geojson.py [num-zipcodes] > output.geojson
+"""
+
 import sys
 import uszipcode
 
@@ -12,8 +16,10 @@ def main():
   "type": "FeatureCollection",
   "features": [
 """)
+    # allow first arg to say how many zipcodes we print, else all
+    returns = sys.argv[1] if len(sys.argv) > 1 else 100000
     first = True
-    for zip_obj in zipcode_search.by_prefix('', returns=100000):
+    for zip_obj in zipcode_search.by_prefix('', returns=returns):
         if zip_obj.polygon:
             coords = zip_obj.polygon
             # I don't understand why sometimes coords are
