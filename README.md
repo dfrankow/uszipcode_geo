@@ -34,5 +34,6 @@ $ topomerge zip3=zipcodes -k 'd.properties.zip5.slice(0,3)' < json/zip5.topojson
 
 # See also
 
-- https://pypi.org/project/uszipcode/
-- https://github.com/topojson/topojson-client/blob/master/README.md#topomerge
+- mapshaper.org
+- pypi.org/project/uszipcode/
+- github.com/topojson/topojson-client/blob/master/README.md#topomerge
