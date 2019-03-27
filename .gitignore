@@ -1,0 +1,9 @@
+# emacs
+*~
+#*#
+
+# output
+json/*
+
+node_modules/
+.venv
