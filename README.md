@@ -1,6 +1,13 @@
 Take zipcode boundaries out of uszipcode data, and make it into
 geojson and topojson files.
 
+Zip code is not actually a geographical designation. Rather, it is
+where the US Post Office delivers mail. So, no mail delivery, no zip
+code.  So, the maps have holes.  The U.S. Census has a more
+geographical concept of Zip Code Tabulation Areas, or ZCTAs, but they
+are not in this project.
+
+
 There is a Makefile for the conversions, but the initial
 print_zip_geojson.py you have to run yourself.
 
